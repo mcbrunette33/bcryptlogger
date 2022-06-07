@@ -1,4 +1,4 @@
-package com.bycrptlogger.bycryptlogger;
+package com.bycrptlogger;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
