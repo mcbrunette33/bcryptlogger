@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Home page</title>
+</head>
+<body>
+<h1 th:text="${'Welcome, ' + username + ' , your are in app'}"></h1>
+
+<form action="/add-post" th:method="post">
+  <input type="hidden" name="siteUserId" th:value="${siteUser.id}">
+  <label for="text">Add a post</label>
+  <input type="text" name="text" id="text">
+  <input type="submit" value="Add Post">
+
+  <h3> Archive posts</h3>
+  <span th:each="post: ${posts}">
+        <div th:text="${'Post: ' + post.text }"></div>
+    </span>
+</form>
+<a href="/">Logout</a>
+</body>
+</html>

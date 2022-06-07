@@ -1,4 +1,4 @@
-package com.bycrptlogger.bycryptlogger;
+package com.bycrptlogger;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
